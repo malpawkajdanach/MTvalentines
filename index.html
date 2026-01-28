@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- PODSTAWY --- */
+     
         * { box-sizing: border-box; }
         body {
             margin: 0; padding: 0;
@@ -24,7 +24,7 @@
             overflow-x: hidden;
         }
 
-        /* Tło */
+   
         .hearts-bg {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             pointer-events: none; z-index: 0;
@@ -36,14 +36,14 @@
         }
         @keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }
 
-        /* --- STYL DLA POWIĘKSZANIA ZDJĘĆ (NOWOŚĆ) --- */
+     
         #image-modal {
-            display: none; /* Domyślnie ukryte */
+            display: none; 
             position: fixed;
-            z-index: 9999; /* Zawsze na wierzchu */
+            z-index: 9999; 
             left: 0; top: 0;
             width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.9); /* Czarne półprzezroczyste tło */
+            background-color: rgba(0, 0, 0, 0.9); 
             justify-content: center;
             align-items: center;
             backdrop-filter: blur(5px);
@@ -74,7 +74,7 @@
             z-index: 10000;
         }
 
-        /* --- EKRAN 1 --- */
+        
         #question-screen {
             width: 100%; height: 100vh;
             display: flex; flex-direction: column;
@@ -98,7 +98,7 @@
         #yes-btn { background-color: #2ecc71; color: white; }
         #no-btn { background-color: #e74c3c; color: white; }
         
-        /* --- ALERT --- */
+    
         #custom-alert {
             display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.6); z-index: 100;
@@ -111,7 +111,7 @@
         @keyframes popIn { from {transform: scale(0.5);} to {transform: scale(1);} }
         .alert-btn { background: #ff4d6d; color: white; margin-top: 15px; padding: 10px 25px; font-size: 1rem; border:none; border-radius:10px;}
 
-        /* --- EKRAN 2 --- */
+      
         #content-screen {
             display: none; width: 100%; max-width: 600px; z-index: 10;
             text-align: center; padding: 20px; padding-bottom: 60px;
@@ -126,10 +126,10 @@
             background: white; padding: 8px 8px 30px 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             width: 44%; min-width: 140px; transform: rotate(-2deg);
-            cursor: pointer; /* Kursor rączki informuje, że można kliknąć */
+            cursor: pointer; 
             transition: transform 0.2s;
         }
-        .photo-frame:active { transform: scale(0.95); } /* Efekt wciśnięcia */
+        .photo-frame:active { transform: scale(0.95); } 
         .photo-frame:nth-child(even) { transform: rotate(2deg); }
         .photo-frame img {
             width: 100%; aspect-ratio: 1/1; object-fit: cover; border: 1px solid #f0f0f0;
@@ -153,16 +153,16 @@
 </head>
 <body>
 
-    <!-- MODAL DO POWIĘKSZANIA ZDJĘĆ (NOWOŚĆ) -->
+   
     <div id="image-modal">
         <span class="close-modal">&times;</span>
         <img id="expanded-img" src="">
     </div>
 
-    <!-- TŁO -->
+  
     <div class="hearts-bg" id="hearts-container"></div>
 
-    <!-- EKRAN 1 -->
+   
     <div id="question-screen">
         <img src="e8be2aaaa463366b948a1fb0c933cbcf.jpg" alt="Cute Cat" class="intro-img">
         <h1>Zostaniesz moją Walentynką? 🌹</h1>
@@ -172,7 +172,7 @@
         </div>
     </div>
 
-    <!-- ALERT -->
+
     <div id="custom-alert">
         <div class="alert-box">
             <h3>Nie nie nie! 😈</h3>
@@ -181,39 +181,39 @@
         </div>
     </div>
 
-    <!-- EKRAN 2 -->
+
     <div id="content-screen">
         <h1>EZZZZZZZZZ POW POW 💕💕💕💕</h1>
 
-        <!-- DWA ZDJĘCIA -->
+       
         <div class="gallery-row">
             <div class="photo-frame">
-                <!-- ZDJĘCIE 1 -->
+              
                 <img src="pixel.jpg" alt="Foto">
                 <div class="date-label">Pixel 😻</div>
             </div>
             <div class="photo-frame">
-                <!-- ZDJĘCIE 2 -->
+              
                 <img src="kebab.jpg" alt="Foto">
                 <div class="date-label">Kebab taka akcja tego typu 🤓</div>
             </div>
             <div class="photo-frame">
-                <!-- ZDJĘCIE 4 -->
+                
                 <img src="kato.jpg" alt="Foto">
                 <div class="date-label">Autobusik szponcik 😝</div>
             </div>
         </div>
 
-        <!-- MUZYKA -->
+
         <div class="music-player">
             <p style="margin: 0; font-weight: bold; font-size: 1.1rem;">🎵 Nasza piosenka:</p>
-            <!-- ZMIEŃ NAZWĘ PLIKU MP3 -->
+          
             <audio controls>
                 <source src="George Michael - Careless Whisper (Lyrics).mp3" type="audio/mpeg">
             </audio>
         </div>
 
-        <!-- TEKST -->
+
         <div class="message-box">
             <h2>Dla mojej twinci 💞</h2>
             <p>
@@ -224,20 +224,20 @@
             </p>
         </div>
 
-        <!-- DODATKOWE ZDJĘCIA -->
+       
         <div class="gallery-row">
-            <!-- ZDJĘCIE 3 -->
+            
              <div class="photo-frame">
                 <img src="mac.jpg" alt="Foto">
                 <div class="date-label">Maczek bam bam 🥴</div>
             </div>
             <div class="photo-frame">
-                <!-- ZDJĘCIE 4 -->
+              
                 <img src="maseczka.jpg" alt="Foto">
                 <div class="date-label">Bylo troche mokro 😏</div>
             </div>
             <div class="photo-frame">
-                <!-- ZDJĘCIE 4 -->
+              
                 <img src="pizza.jpg" alt="Foto">
                 <div class="date-label">Pizza 3 osoby 😋</div>
             </div>
@@ -252,35 +252,35 @@
         const contentScreen = document.getElementById('content-screen');
         const heartsContainer = document.getElementById('hearts-container');
 
-        // --- NOWY KOD DLA ZDJĘĆ ---
+    
         const imageModal = document.getElementById('image-modal');
         const expandedImg = document.getElementById('expanded-img');
         const closeModal = document.querySelector('.close-modal');
         // Pobieramy wszystkie zdjęcia w ramkach
         const galleryImages = document.querySelectorAll('.photo-frame img');
 
-        // Dodajemy funkcję kliknięcia do każdego zdjęcia
+      
         galleryImages.forEach(img => {
             img.addEventListener('click', () => {
-                imageModal.style.display = "flex"; // Pokaż modal
-                expandedImg.src = img.src; // Ustaw źródło powiększonego zdjęcia na kliknięte
+                imageModal.style.display = "flex"; 
+                expandedImg.src = img.src; 
             });
         });
 
-        // Kliknięcie X zamyka
+   
         closeModal.addEventListener('click', () => {
             imageModal.style.display = "none";
         });
 
-        // Kliknięcie w czarne tło też zamyka
+     
         imageModal.addEventListener('click', (e) => {
             if (e.target === imageModal) {
                 imageModal.style.display = "none";
             }
         });
-        // --- KONIEC NOWEGO KODU ---
+       
 
-        // Logika przycisków
+  
         noBtn.addEventListener('click', () => {
             customAlert.style.display = 'flex';
         });
@@ -299,7 +299,7 @@
             setInterval(() => createHeart(), 100);
         });
 
-        // Serca
+
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
@@ -314,4 +314,5 @@
         setInterval(() => createHeart(), 500);
     </script>
 </body>
+
 </html>
